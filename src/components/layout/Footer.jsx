@@ -32,11 +32,11 @@ function Footer() {
 
             <div className=" items-center lg:flex mt-12 flex gap-4 ">
               <Button
-                asChild
+               nativeButton={false}
+               render={<Link to="/contact"/>}
                 size="lg"
                 className="group relative h-11 min-w-[190px] overflow-hidden rounded-full bg-slate-700 px-5 text-sm font-semibold text-white transition-all duration-300 hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-900/20 "
               >
-                <Link to="/contact">
                   <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-x-2">
                     Start a Project
                   </span>
@@ -52,7 +52,7 @@ function Footer() {
                     group-hover:text-sky-400
                   "
                   />
-                </Link>
+                
               </Button>
             </div>
           </div>

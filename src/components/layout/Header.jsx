@@ -120,11 +120,11 @@ function Header() {
           {/* Desktop CTA */}
           <div className="hidden items-center lg:flex">
             <Button
-              asChild
+              nativeButton={false}
               size="lg"
+              render={<Link to="/contact"/>}
               className="group relative h-11 min-w-[190px] overflow-hidden rounded-full bg-slate-900 px-5 text-sm font-semibold text-white transition-all duration-300 hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-900/20"
             >
-              <Link to="/contact">
                 <span className="absolute inset-0 flex items-center justify-center pl-2 pr-7 transition-transform duration-300 group-hover:-translate-x-2">
                   Start a Project
                 </span>
@@ -140,7 +140,7 @@ function Header() {
                     group-hover:text-sky-400
                   "
                 />
-              </Link>
+              
             </Button>
           </div>
 
@@ -194,18 +194,18 @@ function Header() {
 
           {/* CTA */}
           <Button
-            asChild
+            nativeButton={false}
             size="lg"
+            render= {<Link
+               to="/contact"
+               className="flex items-center justify-center gap-2"
+             />}
             className="mt-4 h-12 w-full rounded-xl bg-slate-900 text-sm font-semibold text-white hover:bg-slate-800"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <Link
-              to="/contact"
-              className="flex items-center justify-center gap-2"
-            >
               Start a Project
               <ArrowUpRight className="size-4" />
-            </Link>
+            
           </Button>
 
           {/* Contact info */}

@@ -755,9 +755,9 @@ function ProjectAdmin() {
   );
 }
 
-/* ----------------------------------
-   Summary Card
------------------------------------ */
+
+ //  Summary Card
+
 
 function SummaryCard({ label, value, icon: Icon, active, onClick }) {
   return (
@@ -783,9 +783,9 @@ function SummaryCard({ label, value, icon: Icon, active, onClick }) {
   );
 }
 
-/* ----------------------------------
-   Empty State
------------------------------------ */
+
+  // Empty State
+
 
 function EmptyState() {
   return (
@@ -803,9 +803,9 @@ function EmptyState() {
   );
 }
 
-/* ----------------------------------
-   Helpers
------------------------------------ */
+
+//   Helpers
+
 
 function capitalize(value) {
   return value.charAt(0).toUpperCase() + value.slice(1);

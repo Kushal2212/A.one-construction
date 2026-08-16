@@ -347,9 +347,9 @@ function Testimonials() {
   );
 }
 
-/* ----------------------------------
-   Summary Card
------------------------------------ */
+
+  // Summary Card
+
 
 function SummaryCard({ label, value, icon: Icon, active, onClick }) {
   return (
@@ -375,9 +375,9 @@ function SummaryCard({ label, value, icon: Icon, active, onClick }) {
   );
 }
 
-/* ----------------------------------
-   Empty State
------------------------------------ */
+
+ //  Empty State
+
 
 function EmptyState() {
   return (
@@ -395,9 +395,9 @@ function EmptyState() {
   );
 }
 
-/* ----------------------------------
-   Add / Edit Dialog
------------------------------------ */
+
+   //Add / Edit Dialog
+
 
 function TestimonialDialog({ open, onOpenChange, testimonial }) {
   const dispatch = useDispatch();
@@ -575,9 +575,7 @@ function TestimonialDialog({ open, onOpenChange, testimonial }) {
   );
 }
 
-/* ----------------------------------
-   Helpers
------------------------------------ */
+
 
 function capitalize(value) {
   return value.charAt(0).toUpperCase() + value.slice(1);

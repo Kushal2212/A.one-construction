@@ -339,9 +339,9 @@ function Settings() {
   );
 }
 
-/* ----------------------------------
-   Input Field
------------------------------------ */
+
+ //  Input Field
+
 
 function InputField({
   label,
@@ -375,9 +375,9 @@ function InputField({
   );
 }
 
-/* ----------------------------------
-   Save Button
------------------------------------ */
+
+ //  Save Button
+
 
 function SaveButton() {
   return (
@@ -393,9 +393,9 @@ function SaveButton() {
   );
 }
 
-/* ----------------------------------
-   Notification Row
------------------------------------ */
+
+ //  Notification Row
+
 
 function NotificationRow({ title, description, checked, onChange }) {
   return (

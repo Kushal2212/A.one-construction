@@ -118,11 +118,11 @@ function LocationPreview() {
             {/* Contact link */}
             <div className="hidden items-center lg:flex mt-6 flex gap-4 ">
               <Button
-                asChild
+                nativeButton={false}
                 size="lg"
+                render={<Link to="/contact"/>}
                 className="group relative h-11 min-w-[190px] overflow-hidden rounded-full bg-slate-900 px-5 text-sm font-semibold text-white transition-all duration-300 hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-900/20"
               >
-                <Link to="/contact">
                   <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-x-2">
                     Get in Touch
                   </span>
@@ -138,7 +138,7 @@ function LocationPreview() {
                     group-hover:text-sky-400
                   "
                   />
-                </Link>
+                
               </Button>
             </div>
           </div>
